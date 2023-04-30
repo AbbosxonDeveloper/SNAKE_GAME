@@ -53,3 +53,9 @@ body {
     border-radius: 20px;
     color: #ffFeef;
 }
+
+.keys:active{
+    background-color: rgb(190, 133, 133);
+    padding: 12px 25px;
+
+}
