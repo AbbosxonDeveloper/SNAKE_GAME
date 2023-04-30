@@ -1,5 +1,5 @@
-let blockSize = 15;
-let rows = 22;
+let blockSize = 18;
+let rows = 18;
 
 let cols = 15;
 let board;
@@ -45,7 +45,7 @@ window.onload = function() {
 
     placefood();
     document.addEventListener("keyup", changeDirection)
-    setInterval(update, 100)
+    setInterval(update, 120)
 }
 
 function changeDirection(e) {
