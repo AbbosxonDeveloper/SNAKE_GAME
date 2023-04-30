@@ -12,15 +12,24 @@
         <div id="gameover__box">
             <form id="gameover">
                 <h3>Game Over</h3>
-                <button type="submit">Restart</button>
+                <button class="gamebtn" type="submit">Restart</button>
             </form>
         </div>
         <h1>Snake GAME</h1>
+        <h4>score: <i id="score">0</i></h4>
 
         <canvas id="board"></canvas>
 
+        <div class="btns">
+            <button value="ArrowUp" id="keytop" class="keys">top</button>
+            
+            <div class="left__right">
+                <button value="ArrowLeft" id="keyleft" class="keys">left</button>
+                <button value="ArrowRight" id="keyright" class="keys">right</button>
+            </div>
 
-        <h4>score: <i id="score">0</i></h4>
+            <button value="ArrowDown" id="keybottom" class="keys">bottom</button>
+        </div>
     
         <script src="./script/script.js"></script>
     </body>

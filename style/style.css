@@ -30,8 +30,26 @@ body {
     opacity: 1;
 }
 
-button {
+.gamebtn {
     background-color: blue;
     color: white;
     padding: 10px 35px;
+}
+
+.btns {
+    display: flex;
+    flex-direction: column; 
+    gap: 5px;
+    align-items: center;
+}
+
+.keys {
+    border: none;
+    font-size: 20px;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(103, 169, 10);
+    padding: 10px 23px;
+    border-radius: 20px;
+    color: #ffFeef;
 }

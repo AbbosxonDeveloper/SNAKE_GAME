@@ -24,7 +24,20 @@ console.log(box);
 let score = document.getElementById("score")
 let zero = -1
 
-window.onload = function(){
+let ktop = document.getElementById("keytop")
+let kleft = document.getElementById("keyleft")
+let kright = document.getElementById("keyright")
+let kbottom = document.getElementById("keybottom")
+
+const buttonArr = [ktop, kleft, kright, kbottom]
+
+for (let i of buttonArr) {
+    i.onclick = function() {
+        changeDirection({code: i.value})
+    }
+}
+
+window.onload = function() {
     board = document.getElementById("board");
     board.height = rows * blockSize;
     board.width = cols * blockSize;
@@ -35,7 +48,7 @@ window.onload = function(){
     setInterval(update, 100)
 }
 
-function changeDirection(e){
+function changeDirection(e) {
     if(e.code == "ArrowUp" && velocityY != 1) {
         velocityX = 0;
         velocityY = -1;
